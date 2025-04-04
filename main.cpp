@@ -33,3 +33,17 @@ int gcd(int a, int b) {
 int lcm(int a, int b) {
     return (a * b) / gcd(a, b);
 }
+int subtract(int a, int b) {
+    return a - b;
+}
+
+float divide(int a, int b) {
+    if (b == 0) {
+        return 0;
+    }
+    return (1.0 * a) / b; }
+
+int generateRandom(int min, int max) {
+    srand(time(0));
+    return rand() % (max - min + 1) + min;
+}
